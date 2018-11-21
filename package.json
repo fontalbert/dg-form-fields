@@ -1,0 +1,79 @@
+{
+  "name": "dg-form-fields",
+  "version": "1.0.0",
+  "description": "Component to generate a form dinamically.",
+  "main": "./dist/index.js",
+  "module": "./src/index.js",
+  "scripts": {
+    "build": "babel src --out-dir dist",
+    "prepublishOnly": "npm run build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fontalbert/dg-form-fields.git"
+  },
+  "keywords": [
+    "react",
+    "form",
+    "generator"
+  ],
+  "author": "Albert Font <albert.font@outlook.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/fontalbert/dg-form-fields/issues"
+  },
+  "homepage": "https://github.com/fontalbert/dg-form-fields#readme",
+  "dependencies": {
+    "react": "^16.6.3",
+    "react-dom": "^16.6.3",
+    "prop-types": "15.6.2",
+    "react-bootstrap": "0.32.4",
+    "dg-form-validator": "^1.0.2",
+    "draft-js": "0.10.5",
+    "react-draft-wysiwyg": "1.12.13",
+    "draftjs-to-html": "0.8.4",
+    "babel-polyfill": "6.26.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.1.2",
+    "@babel/core": "^7.1.2",
+    "@babel/preset-env": "^7.1.0",
+    "@babel/preset-react": "^7.0.0",
+    "@babel/register": "^7.0.0",
+    "eslint": "^5.8.0",
+    "eslint-config-es6": "^1.10.3",
+    "eslint-config-react": "^1.1.7"
+  },
+  "babel": {
+    "presets": [
+      [
+        "@babel/preset-env",
+        {
+          "targets": {
+            "browsers": [
+              "last 2 versions",
+              "ie >= 7"
+            ]
+          }
+        }
+      ],
+      "@babel/preset-react"
+    ]
+  },
+  "eslintConfig": {
+    "ecmaFeatures": {
+      "modules": true,
+      "spread": true,
+      "restParams": true
+    },
+    "env": {
+      "browser": true,
+      "es6": true,
+      "jest": true
+    },
+    "parserOptions": {
+      "sourceType": "module"
+    }
+  }
+}
